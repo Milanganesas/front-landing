@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FrontMentor Challenge</title>
+        <script defer src="main.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./styles/index.css">
+    </head>
+    <body class="bg-[#FAFAFA] overflow-x-hidden text-[18px] font-medium">
+        <nav class="flex justify-between mx-[17px] my-[24px]">
+            <img src="./images/logo.svg" alt="logo" />
+            <div id="menu-btn" class="hover:cursor-pointer">
+                <img src="images/icon-menu.svg" alt="menu-img"/>
+            </div>
+            <ul id="menu-content" class="flex flex-col ml-5 bg-[#FAFAFA] gap-[30px] text-[#636363] h-full w-2/3 px-[25px] py-[20px] translate-x-full absolute top-0 right-0 transition-all duration-500 backdrop-brightness-50 hidden">
+                <div id="menu-close-btn" class="flex flex-row-reverse hover:cursor-pointer">
+                    <img src="images/icon-close-menu.svg" alt="menu-img"/>
+                </div>
+                <li>
+                    <button id="features-arrow" class="btn-drop-CSS">
+                        Features
+                        <img src="" alt="arrow-icon"/>
+                    </button>
+                    <ul id="features-drop" class="drop-CSS">
+                        <li>
+                            <a href="" class="li-drop">
+                                <img src="images/icon-todo.svg" alt="todo-icon"/>
+                                Todo List
+                            </a>
+                        </li>
+                        <li >
+                            <a href="" class="li-drop">
+                                <img src="images/icon-calendar.svg" alt="calendar-icon"/>
+                                Calendar
+                            </a>
+                        </li>
+                        <li >
+                            <a href="" class="li-drop">
+                                <img src="images/icon-reminders.svg" alt="reminders-icon"/>
+                                Reminders
+                            </a>
+                        </li>
+                        <li>    
+                            <a href="" class="li-drop">
+                                <img src="images/icon-planning.svg" alt="planning-icon"/>
+                                Planning
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button id="company-arrow" class="btn-drop-CSS">
+                        Company
+                        <img src="" alt="arrow-icon" />
+                    </button>
+                    <ul id="company-drop" class="drop-CSS">
+                        <li>
+                            <a href="" class="li-drop">History</a>
+                        </li>
+                        <li>
+                            <a href="" class="li-drop">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="" class="li-drop">Blog</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">About</a></li>
+                <ul class="flex flex-col items-center text-center mt-[30px] gap-[30px]">
+                    <li><a href="">Login</a></li>
+                    <li><a href="" class="border border-[#141414] rounded-2xl px-[70px] py-[10px]">Register</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <main>
+            <article class="flex flex-col-reverse gap-[50px]">
+                <section class="grid gap-[50px]">
+                    <div class="grid gap-[10px] mx-[20px] items-center text-center">
+                        <h1 class="text-[35px] font-semibold">Make remote work</h1>
+                        <p class="text-[#636363]">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                        <div class="mt-[20px]">
+                            <button class="px-[25px] py-[15px] rounded-2xl bg-black text-white">Learn more</button>
+                        </div>
+                    </div>
+                    <div class="flex gap-[20px] mx-[15px]">
+                        <div class="w-1/4">
+                            <img src="images/client-databiz.svg" alt="databiz-logo" class="w-full"/>
+                        </div>
+                        <div class="w-1/4">
+                            <img src="images/client-audiophile.svg" alt="audiophile-logo" class="w-full"/>
+                        </div>
+                        <div class="w-1/4">
+                            <img src="images/client-meet.svg" alt="meet-logo"/>
+                        </div>
+                        <div class="w-1/4">
+                            <img src="images/client-maker.svg" alt="maker-logo"/>
+                        </div>
+                    </div>
+                </section>
+                <div>
+                    <img id="hero" src="" alt="hero-img"/>
+                </div>
+            </article>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
