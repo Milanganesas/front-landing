@@ -12,17 +12,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./styles/index.css">
     </head>
-    <body class="bg-[#FAFAFA] overflow-x-hidden text-[18px] font-medium">
-        <nav class="flex justify-between mx-[17px] my-[24px]">
-            <img src="./images/logo.svg" alt="logo" />
-            <div id="menu-btn" class="hover:cursor-pointer">
+    <body class="bg-[#FAFAFA] overflow-x-hidden text-[18px] font-medium absolute top-0 right-0 left-0">
+        <nav class="flex justify-between mx-[17px] my-[24px] lg:flex lg:justify-start lg:my-[28px] lg:mx-[25px]">
+            <div>
+                <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <div id="menu-btn" class="hover:cursor-pointer lg:hidden">
                 <img src="images/icon-menu.svg" alt="menu-img"/>
             </div>
-            <ul id="menu-content" class="flex flex-col ml-5 bg-[#FAFAFA] gap-[30px] text-[#636363] h-full w-2/3 px-[25px] py-[20px] translate-x-full absolute top-0 right-0 transition-all duration-500 backdrop-brightness-50 hidden">
-                <div id="menu-close-btn" class="flex flex-row-reverse hover:cursor-pointer">
+            <ul id="menu-content" class="flex flex-col ml-5 bg-[#FAFAFA] gap-[30px] text-[#636363] h-full w-2/3 px-[25px] py-[20px] translate-x-full absolute top-0 right-0 transition-all duration-500 hidden lg:flex lg:flex-row lg:w-full lg:block lg:translate-x-0 lg:bg-transparent lg:static lg:p-0 lg:m-0">
+                <div id="menu-close-btn" class="flex flex-row-reverse hover:cursor-pointer lg:hidden">
                     <img src="images/icon-close-menu.svg" alt="menu-img"/>
                 </div>
-                <li>
+                <li class="lg:ml-[60px]">
                     <button id="features-arrow" class="btn-drop-CSS">
                         Features
                         <img src="" alt="arrow-icon"/>
@@ -71,40 +73,40 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">About</a></li>
-                <ul class="flex flex-col items-center text-center mt-[30px] gap-[30px]">
-                    <li><a href="">Login</a></li>
-                    <li><a href="" class="border border-[#141414] rounded-2xl px-[70px] py-[10px]">Register</a></li>
+                <li class="hover:text-[#141414]"><a href="">Careers</a></li>
+                <li class="hover:text-[#141414]"><a href="">About</a></li>
+                <ul class="flex flex-col items-center text-center mt-[30px] gap-[30px] lg:flex lg:flex-row lg:p-0 lg:m-0 lg:absolute lg:right-0">
+                    <li class="hover:text-[#141414]"><a href="">Login</a></li>
+                    <li><a href="" class="rounded-2xl px-[70px] py-[10px] bg-[#141414] text-[#FAFAFA] hover:border hover:border-[#141414] hover:bg-[#FAFAFA] hover:text-[#141414] lg:px-[25px] lg:hover:px-[24px]">Register</a></li>
                 </ul>
             </ul>
         </nav>
         <main>
-            <article class="flex flex-col-reverse gap-[50px]">
-                <section class="grid gap-[50px]">
-                    <div class="grid gap-[10px] mx-[20px] items-center text-center">
-                        <h1 class="text-[35px] font-semibold">Make remote work</h1>
+            <article class="flex flex-col-reverse gap-[50px] lg:flex lg:flex-row">
+                <section class="grid gap-[50px] lg:pl-[200px] lg:mt-[50px] lg:pr-[50px]">
+                    <div class="grid gap-[10px] mx-[20px] items-center text-center lg:grid lg:text-start">
+                        <h1 class="text-[35px] font-semibold lg:text-[60px]">Make remote work</h1>
                         <p class="text-[#636363]">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
                         <div class="mt-[20px]">
-                            <button class="px-[25px] py-[15px] rounded-2xl bg-black text-white">Learn more</button>
+                            <button class="px-[25px] py-[15px] rounded-2xl bg-[#141414] text-[#FAFAFA] hover:border hover:border-[#141414] hover:bg-[#FAFAFA] hover:text-[#141414] lg:hover:px-[24px] lg:hover:py-[14px]">Learn more</button>
                         </div>
                     </div>
-                    <div class="flex gap-[20px] mx-[15px]">
-                        <div class="w-1/4">
+                    <div class="flex gap-[20px] mx-[15px] lg:h-[25px] lg:mt-[20px]">
+                        <div class="flex justify-center w-1/4">
                             <img src="images/client-databiz.svg" alt="databiz-logo" class="w-full"/>
                         </div>
-                        <div class="w-1/4">
+                        <div class="flex justify-center w-1/4">
                             <img src="images/client-audiophile.svg" alt="audiophile-logo" class="w-full"/>
                         </div>
-                        <div class="w-1/4">
+                        <div class="flex justify-center w-1/4">
                             <img src="images/client-meet.svg" alt="meet-logo"/>
                         </div>
-                        <div class="w-1/4">
+                        <div class="flex justify-center w-1/4">
                             <img src="images/client-maker.svg" alt="maker-logo"/>
                         </div>
                     </div>
                 </section>
-                <div>
+                <div class="flex justify-center lg:pr-[200px] lg:pl-[50px]"> 
                     <img id="hero" src="" alt="hero-img"/>
                 </div>
             </article>

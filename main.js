@@ -9,13 +9,13 @@ let menuOpen = false;
 
 const open = () => {
     if(!menuOpen) {
-        document.body.classList.add("backdrop-brightness-50");
+        document.body.classList.toggle("backdrop-brightness-50");
         menuContent.classList.remove("hidden");
         menuContent.classList.replace("translate-x-full", "translate-x-0");
         menuOpen = true;
         
     } else {
-        document.body.classList.remove("backdrop-brightness-50");
+        document.body.classList.toggle("backdrop-brightness-50");
         menuContent.classList.add("hidden");
         menuContent.classList.replace("translate-x-0", "translate-x-full");
         menuOpen = false;
@@ -44,20 +44,24 @@ const arrowOpen = (e) => {
     if(btn === "features-arrow") { 
         if(!featuresOpen) {
             arrowFeatures.src = "images/icon-arrow-up.svg";
+            dropFeatures.classList.add("lg:absolute", "lg:left-0", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
             dropFeatures.classList.remove("hidden");
             featuresOpen = true;
         } else {
             arrowFeatures.src = "images/icon-arrow-down.svg";
+            dropFeatures.classList.remove("lg:absolute", "lg:left-0", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
             dropFeatures.classList.add("hidden");
             featuresOpen = false;
         }
     } else {
         if(!companyOpen) {
             arrowCompany.src = "images/icon-arrow-up.svg";
+            dropCompany.classList.add("lg:absolute", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
             dropCompany.classList.remove("hidden");
             companyOpen = true;
         } else {
             arrowCompany.src = "images/icon-arrow-down.svg";
+            dropCompany.classList.remove("lg:absolute", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
             dropCompany.classList.add("hidden");
             companyOpen = false;
         }
@@ -79,7 +83,7 @@ const dropCSS = document.querySelectorAll(".drop-CSS");
 const liCSS = document.querySelectorAll(".li-drop");
 
 btnDropCSS.forEach(e => {
-    e.classList.add("flex", "items-center", "text-center", "gap-2")
+    e.classList.add("flex", "items-center", "text-center", "gap-2", "hover:text-[#141414]")
 });
 
 dropCSS.forEach(e => {
@@ -87,7 +91,7 @@ dropCSS.forEach(e => {
 });
 
 liCSS.forEach(e => {
-    e.classList.add("flex", "items-center", "text-center", "gap-[15px]")
+    e.classList.add("flex", "items-center", "text-center", "gap-[15px]", "hover:text-[#141414]")
 })
 
 
