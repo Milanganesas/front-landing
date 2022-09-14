@@ -15,7 +15,7 @@ btnDropCSS.forEach(e => {
 });
 
 dropCSS.forEach(e => {
-    e.classList.add("flex", "flex-col", "gap-[20px]", "hidden", "mt-[35px]", "ml-[20px]");
+    e.classList.add("flex", "flex-col", "gap-[20px]", "opacity-0", "absolute", "mt-[35px]", "ml-[20px]", "transition-all", "duration-200");
 });
 
 liCSS.forEach(e => {

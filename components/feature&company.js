@@ -17,24 +17,24 @@ const arrowOpen = (e) => {
         if(!featuresOpen) {
             arrowFeatures.src = "images/icon-arrow-up.svg";
             dropFeatures.classList.add("lg:absolute", "lg:left-0", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
-            dropFeatures.classList.remove("hidden");
+            dropFeatures.classList.replace("opacity-0", "opacity-100");
             featuresOpen = true;
         } else {
             arrowFeatures.src = "images/icon-arrow-down.svg";
             dropFeatures.classList.remove("lg:absolute", "lg:left-0", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
-            dropFeatures.classList.add("hidden");
+            dropFeatures.classList.replace("opacity-100", "opacity-0");
             featuresOpen = false;
         }
     } else {
         if(!companyOpen) {
             arrowCompany.src = "images/icon-arrow-up.svg";
             dropCompany.classList.add("lg:absolute", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
-            dropCompany.classList.remove("hidden");
+            dropCompany.classList.replace("opacity-0", "opacity-100");
             companyOpen = true;
         } else {
             arrowCompany.src = "images/icon-arrow-down.svg";
             dropCompany.classList.remove("lg:absolute", "lg:bg-[#FAFAFA]", "lg:drop-shadow-2xl", "lg:rounded-2xl", "lg:p-5");
-            dropCompany.classList.add("hidden");
+            dropCompany.classList.replace("opacity-100", "opacity-0");
             companyOpen = false;
         }
     }
